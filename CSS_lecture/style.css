@@ -1,0 +1,81 @@
+/* Universal selector */
+* {
+    /* color: blue; */
+}
+
+/* tag selector/element selector */
+h1 {
+    color: red;
+    text-align: center;
+}
+
+/* attribute selector */
+/* a[target="_blank"] {
+    color: green;
+} */
+
+/* id selector */
+#idselector {
+    color: aqua;
+    font-size: 30px;
+}
+
+
+/* class selector */
+.classselector {
+    color: yellow;
+    font-size: 30px;
+    text-indent: 96px;
+}
+
+/* Descendant selector */
+.desc a{
+    color: red;
+}
+
+/* child selector */
+.desc> a{
+    color: rgb(21, 150, 12);
+}
+
+
+/*Pseudo  selector  */
+ a:link{
+    color: red;
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(179, 141, 28);
+    font-size: 30px;
+}
+
+a:hover{
+    color: rgb(23, 4, 82);
+    letter-spacing: 10px;
+}
+
+a:active{
+    color: rgb(24, 170, 99);
+    font-size: 20px;
+} */
+
+
+
+/* target */
+/* :target {
+    color: rgb(0, 213, 255);
+    font-size: 30px;
+} */
+
+div:target{
+    color: rgb(0, 213, 255);
+}
+
+
+
+
+
+
+
+

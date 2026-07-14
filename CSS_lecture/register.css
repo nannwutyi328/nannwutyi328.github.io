@@ -1,0 +1,101 @@
+body{
+    background-color: #3994ba;
+}
+
+h1{
+    text-align: center;
+    color: red;
+
+}
+
+#myForm{
+    width: 40%;
+    margin: auto;
+
+
+
+
+}
+
+
+/* group attribute selector */
+input[type="text"],input[type="email"],input[type="number"]{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* focus selector */
+input[type="text"]:focus,input[type="email"]:focus,input[type="number"]:focus{
+   letter-spacing: 3px;
+   border: 2px solid #ba3984;
+}
+
+/* checked selector*/
+input[type="radio"]:checked+label{
+    letter-spacing: 2px;
+   color: #ba3984;
+   text-transform: uppercase;
+
+}
+
+
+
+/* enabled selector*/
+input[type="checkbox"]:enabled+label{
+    font-style: italic;
+    color: #0000ff;
+}
+
+
+/* disabled selector*/
+
+input[type="checkbox"]:disabled+label{
+    color: green;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* checked selector*/
+input[type="checkbox"]:checked+label{
+    letter-spacing: 2px;
+   color: #ba3984;
+   text-transform: uppercase;
+    font-style: normal;
+}
+
+/* descendant selector */
+ul li:first-child{
+    color: red;
+}
+
+ul li:last-child{
+    color: #0000ff;
+}
+
+ul li:nth-child(4){
+    color: #ba3984;
+
+}
+
+/* Empty Selector */
+p:empty{
+    background-color: #eaff00;
+    height: 30px;
+}
+
+.register_btn{
+    width: 100px;
+    height: 40px;
+}
+
+
+.register_btn:hover{
+    background-color: rgb(220, 33, 136);
+}
+
+
+
+

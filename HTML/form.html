@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+    
+    <!-- method get is default(can see) -->
+    <form action="request.php" method="get">
+
+        <label for="name">Name</label>
+        <input type="text" name="stu_name" id="name">
+        <br><br>
+
+        <label for="emails">Emails</label>
+        <input type="email" name="stu_email" id="emails">
+        <br><br>
+
+        <label for="phone">Phone</label>
+        <input type="number" name="stu_phone" id="phone">
+        <br><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="stu_dob" id="dob">
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="stu_password" id="password">
+        <br><br>
+
+        <label for="passport">Passport</label>
+        <input type="file" accept=".pdf"   name="stu_passport" id="passport">
+        <br><br>
+        <!-- limit file .pdf .jpg .web -->
+        <!-- http://127.0.0.1:5500/request.php?stu_name=&stu_email=&stu_phone=&stu_dob=&stu_password=&stu_passport=&stu_years=First+Year&stu_address= -->
+
+        <label for="years">Years</label>
+        <select name="stu_years" id="years">
+            <option value="">Choose Your Year</option>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+        </select>
+        <br><br>
+        <!-- same name because not two choose -->
+        <label for="">Gender</label>
+        <br><br>
+        <input type="radio" name="gender" id="male" value="male" >
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="female" >
+        <label for="female">female</label>
+
+        <br><br>
+        <label for="">Hobby</label>
+        <br><br>
+
+        <input type="checkbox" name="gaming" id="gaming" value="gaming">
+        <label for="gaming">Gaming</label>
+
+        <input type="checkbox" name="Swimming" id="Swimming" value="Swimming">
+        <label for="Swimming">Swimming</label>
+
+        <input type="checkbox" name="reading" id="reading" value="reading">
+        <label for="reading">reading</label>
+
+        <br><br>
+        <label for="address">Address</label>
+        <textarea name="stu_address" id="address" cols="40" rows="10"></textarea>
+
+        <br><br>
+
+
+        <!-- http://127.0.0.1:5500/request.php?stu_name=nann&stu_email=nannhtun8%40gmail.com&stu_phone=09451759127&stu_dob=2026-07-21&stu_password=nann&stu_passport=test_vouncher.pdf&stu_years=3&gender=female&Swimming=Swimming&stu_address=Monywa+%2C+Sagaing -->
+
+        <input type="time" name="" id="">
+        <input type="range" min="0" max="100" name="" id="" >
+        <input type="color"  name="" id="">
+        <input type="text"  name="write" id="" required>
+        <input type="text"  name="city1" id="" value="Mandalay">
+        <input type="text"  name="city2" id="" value="Yangon" readonly>
+        <input type="text"  name="plac" id="" placeholder="09.451759127">
+
+
+
+
+
+
+
+
+
+
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+
+</body>
+</html>
