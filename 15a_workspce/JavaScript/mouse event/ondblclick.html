@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse event:ondblclick</title>
+</head>
+<body>
+    <h2>Click Event</h2>
+
+    <p class="para" ondblclick="change_style()">Double click the Button</p>
+    <div>
+
+        
+    <img src="../mouse event/images/js.jpg" class="img" alt="js" width="200px" height="200px">
+</div>
+    <button ondblclick="change_attribute()">Double Click Me</button>
+
+<!-- element(s) id ka ma par -->
+
+
+    <script>
+        function change_attribute(){
+           document.getElementsByClassName("img")[0].src="../mouse event/images/image.png";
+        }
+
+        function change_style(){
+            document.querySelector('.para').style.fontSize="40px";
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

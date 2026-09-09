@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+    <head>
+
+    </head>
+    <body>
+
+        <h2>Client order form</h2>
+        <form name="orderform"  method="get" action="Course_Time_Table_Exercise.html" >
+
+            <fieldset>
+                <legend>Client Information</legend>
+                <label for="First name">First name</label>
+                <input type="text" name="First name" id="First name" placeholder="Enter your First name" value="Nann">
+                <label for="last Name">Last Name</label>
+                <input type="text"name="Last name" id="Last name"   placeholder="Enter your Last name"  value="Htun">
+            </fieldset> <br><br>
+
+            <br><br>
+            <fieldset >
+                <legend required>Product Type</legend>
+                <input type="checkbox" name="fruit" value="apple" >
+                <label for="fruit">Apple</label>
+                <input type="checkbox" name="fruit" value="Orange" >
+                <label for="fruit">Orange</label>
+                <input type="checkbox" name="fruit" name="lemaon" >
+                <label for="fruit">Lemon</label>
+                <fieldset>
+                <input type="radio" id="Ptype" name="Ptype"><!----can select only one-->
+                <label for="Ptype">Package</label>
+                <input type="radio" id="Ptype" name="Ptype">
+                <label for="Ptype">Individual</label>
+                </fieldset>
+                </fieldset> <br><br>
+
+
+            <fieldset>
+                <legend>Delivery Location</legend>
+
+                <label for="Country name">Country</label>
+                <select id="Country name" name="Country name">
+                <option value="Myanmar">Myanmar</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Japanese">Japanese</option>
+                </select>
+                
+                <label for="City">City</label>
+                <select name="City" multiple="multiple" >
+                    <option value="Monywa" selected>Monywa</option>
+                    <option value="Yg">Yangon</option>
+                    <option value="Mdy">Mandalay</option>
+                    <option value="Mgy">Magway</option>
+                </select>
+
+            </fieldset><br><br>
+
+            <fieldset>
+                <legend>Order details</legend>
+                
+                    <label for="Quantity">Quantity</label>
+                    <input type="number" min="1" required>
+                    <input type="file" name="photo"><br><br>
+                    <label for="orderdetail">Remarks</label>
+                    <textarea id="orderdetail"rows=5 cols="30">Enter the order detail</textarea>
+            </fieldset>
+                    <br><br>
+                    <button name="apply now" >Apply Now</button>
+                    <input type="reset" id="form">
+
+            
+        </form>
+        
+    </body>
+</html>

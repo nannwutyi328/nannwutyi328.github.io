@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email validation blur event</title>
+</head>
+
+<body>
+    <label for="">Email:</label>
+    <input type="email" name="" id="email">
+    <p id="error"></p>
+    <script>
+        
+        let email=document.getElementById("email");
+        let error=document.getElementById("error");
+
+        
+        email.addEventListener("blur",function(){
+            if(email.value== ""){
+                error.innerHTML="Email is required!";
+
+              
+            }else{
+                error.innerHTML ="Email is filled!";
+                
+            }
+        })
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

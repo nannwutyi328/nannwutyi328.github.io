@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        #para-1{
+            position: absolute;
+            left: 200px;
+            top: 270px;
+            z-index: 3;
+            color: blue;
+            font-size: larger;
+            font-weight: bold;
+        }
+        img.flower{
+            position: absolute;
+            left: 300px;
+            top: 200px;
+            z-index: -1;
+        }
+        img.banana{
+            position: absolute;
+            left: 350px;
+            top: 220px;
+            z-index: 2;
+        }
+        img.apple{
+            position: absolute;
+            left: 320px;
+            top: 230px;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>The Overlapping Styles</h2>
+
+    <p id="para-1">Metro IT and Japanese language Center</p>
+    <img class="flower" src="image/flower-06.jpg">
+    <img class="banana" src="image/Bananas.png">
+    <img class="apple" src="image/Apples.png">
+</body>
+</html>

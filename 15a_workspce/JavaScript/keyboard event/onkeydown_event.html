@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Down Event</title>
+</head>
+<body>
+    
+    <h2>Keyboard Event: onkeydown</h2>
+    <p>Executeswhen a key is pressed.</p>
+
+    <input type="text" onkeydown="show_message()">
+    <p id="para"></p>
+    
+    <script>
+        // function show_message(){
+        //     document.getElementById('para').innerHTML="";
+
+        // }
+
+        function show_message(){
+            let p=document.getElementById("para");
+            p.innerHTML="A key is pressed";
+            p.style.fontSize="30px";
+            p.style.color="darked";
+        }
+    </script>
+
+
+</body>
+</html>

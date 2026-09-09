@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Student Information</h2>
+    <!-- JS OUtput using innerHTML or innerText -->
+    <!-- Propose: Displays or changes content inside an HTML element
+   It is used to display dynamic content on a web page-->
+
+    <p id="student"></p>
+    <!-- JS Code -->
+    <script>
+        let name = "Aye Aye";
+        let age = 24;
+        let course = "Web Development";
+
+        document.getElementById("student").innerHTML =
+            "Name: " + name + "<br>" +
+            "Age: " + age + "<br>" +
+            "Course: " + course;
+    </script>
+</body>
+
+</html>

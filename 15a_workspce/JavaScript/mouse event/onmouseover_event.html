@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event: onmouseover</title>
+</head>
+    <style>
+        .example{
+            border: 3px solid red;
+        }
+
+        .highlight{
+            border: 5px solid blue;
+            border-radius: 15px;
+        }
+
+    </style>
+
+<body>
+    <h2>Mouse Oover Event</h2>
+    <p>Move the mouse over the image</p>
+    <img src="../mouse event/images/image.png" onmouseover="change_attribute()"  class="example" alt="image" width="200px" height="200px">
+    <!-- input index[index]  for class and tag-->
+    <script>
+        function change_attribute(){
+            let img=document.getElementsByTagName("img")[0];
+            img.src="../mouse event/images/js.jpg"
+            img.alt="javascript";
+            img.width=300;
+            img.height=400;
+            img.className="highlight";
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

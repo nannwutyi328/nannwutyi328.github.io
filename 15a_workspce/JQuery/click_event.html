@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse event:click</title>
+    <!-- jquery links -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="jquery-4.0.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <!-- Syntax :$(selector).action or event(function(){
+     }) -->
+    <button id="btn" class="btn btn-info m-3">Click me</button>
+    <script>
+        $("#btn").click(function(){
+            alert(
+                "Button Clicked!"
+            )
+        });
+
+
+    </script>
+     
+</body>
+</html>

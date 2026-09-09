@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filter Styles</title>
+    <style type="text/css">
+        body{
+            background-color: burlywood;
+        }
+        h2{
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: italic;
+         }
+        div.polaroid{
+            float: left;
+            width: 25%;
+            margin: 10px;
+            background-color: white;
+            box-shadow: 0px 2px 5px 3px rgb(44, 2, 16);
+            padding: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        div.polaroid:hover{
+            box-shadow: 0px 2px 5px 3px darkslateblue;
+        }
+        div.polaroid img{
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        div.polaroid-content{
+            text-align: center;
+        }
+        img.blur{
+            filter: blur(5px);
+        }
+        img.brightness{
+            filter: brightness(200%);
+        }
+        img.contrast{
+            filter: contrast(200%);
+        }
+        img.hue-rotate{
+            filter: hue-rotate(38deg);
+         }
+        img.invert{
+            filter: invert(150%);
+        } 
+        img.opacity{
+            filter: opacity(50%);
+        }
+        img.saturate{
+            filter: saturate(25);
+        }
+        img.sepia{
+            filter: sepia(50%);
+        }
+        img.shadow{
+            filter: drop-shadow(8px 8px 10px brown);
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Image Polaroid/Card</h2>
+
+    <!----Original Image Style----->
+    <div class="polaroid">
+        <img src="image/metro-logo.png">
+        <div class="polaroid-content">
+            <p>Original Image Style</p>
+        </div>
+    </div>
+
+    <!----Blur Image Style----->
+    <div class="polaroid">
+        <img class="blur" src="image/metro-logo.png">
+        <div class="polaroid-content">
+            <p>Blur Image Style</p>
+        </div>
+    </div>
+
+    <!---- Brightness Image Style----->
+    <div class="polaroid">
+        <img class="brightness" src="image/metro-logo.png">
+        <div class="polaroid-content">
+            <p>Brightness Image Style</p>
+        </div>
+    </div>
+
+    <!----Contrast Image Style----->
+    <div class="polaroid">
+        <img class="contrast" src="image/metro-logo.png">
+        <div class="polaroid-content">
+            <p>Contrast Image Style</p>
+        </div>
+    </div>
+
+    <!----Hue-rotate Image Style----->
+    <div class="polaroid">
+        <img class="hue-rotate" src="image/metro-logo.png">
+        <div class="polaroid-content">
+            <p>Hue-rotate Image Style</p>
+        </div>
+    </div>
+
+    <!----Invert Image Style----->
+    <div class="polaroid">
+        <img class="invert" src="image/metro-logo.png">
+        <div class="polaroid-content">
+            <p>Invert Image Style</p>
+        </div>
+    </div>
+
+    <!----Opacity Image Style----->
+    <div class="polaroid">
+        <img class="opacity" src="image/metro-logo.png">
+        <div class="polaroid-content">
+            <p>Opacity Image Style</p>
+        </div>
+    </div>
+
+     <!----Saturate Image Style----->
+    <div class="polaroid">
+        <img class="saturate" src="image/metro-logo.png">
+        <div class="polaroid-content">
+            <p>Saturate Image Style</p>
+        </div>
+    </div>
+
+    <!----Sepia Image Style----->
+    <div class="polaroid">
+        <img class="sepia" src="image/metro-logo.png">
+        <div class="polaroid-content">
+            <p>Sepia Image Style</p>
+        </div>
+    </div>
+
+    <!----Drop Shadow Image Style----->
+    <div class="polaroid">
+        <img class="shadow" src="image/metro-logo.png">
+        <div class="polaroid-content">
+            <p>Shadow Image Style</p>
+        </div>
+    </div>
+    
+</body>
+</html>

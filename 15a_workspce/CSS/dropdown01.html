@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-color: white;
+            box-shadow: 0 3px 5px 5px rgb(230, 126, 126);
+            min-width: 158px;
+            left: 10px;
+            top: 50px;
+            padding: 10px;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Dropdown Basic Example</h1>
+    <div class="dropdown">
+        <h2>Mouse Over Me </h2>
+        <div class="dropdown-content">
+            <p>Hello Word!</p>
+            <p>Metro Myanmar</p>
+        </div>
+    </div>
+    <h1>Metro IT and Japanese Language Center</h1>
+    
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Intro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <!-- HTML Content -->
+    <p>JS can change html content using<code><i>getElementByID()</i></code>method.</p>
+    <p>Example:</p>
+    <p id="para1">This is old paragraph</p>
+    <button class="btn btn-dark" onclick="document.getElementById('para1').innerHTML='This is new paragraph';">Change
+        Content</button>
+
+    <hr>
+
+    <!--HTML Attribute -->
+    <p>JA can change html attribute such as HTML image by changing the<code><mark>src</mark></code>
+        <source>attribute of an <code>&lt; img &gt;</code>
+        tag.
+    </p>
+    <img src="https://png.pngtree.com/png-vector/20230906/ourmid/pngtree-cute-cartoon-cat-png-image_10004758.png"
+        class="w-5 h-5" id="imag1">
+    <button class="btn btn-danger" onclick="document.getElementById('imag1').src='cat.gif'">Change Image</button>
+
+
+    <!---Hide Style(CSS) -->
+    <p>
+        JS can change html style by accessing an element and modifying its style propety.
+        Syntax: <code>document.getElementById('id').style.property='value';</code>
+    </p>
+
+
+    <p id="para2">Hello JavaScript!</p>
+    <button class="btn btn-warning" onclick="change_style()">Change Style</button>
+
+    <!-- JS Code -->
+    <script>
+        // function change_style(){
+        //     document.getElementById('para2').style.color = 'red';
+        //     document.getElementById('para2').style.fontSize = '20px';
+        //     document.getElementById('para2').style.fontWeight= 'bold';
+        //     document.getElementById('para2').style.textTransform = 'uppercase';
+        //     document.getElementById('para2').style.textDecoration= 'underline';
+        //     document.getElementById('para2').style.textAlign = 'center';
+
+        // }
+
+        function change_style() {
+            let x = document.getElementById('para2');
+            x.style.color = 'red';
+            x.style.fontSize = '20px';
+            x.style.fontWeight = 'bold';
+            x.style.textTransform = 'uppercase';
+            x.style.textDecoration = 'underline';
+            x.style.textAlign = 'center';
+
+        }
+
+
+
+    </script>
+
+
+
+
+    <!-- Hide -->
+    <p id="para3">Hide Element</p>
+    <button class="btn btn-primary" onclick="document.getElementById('para3').style.display=' none';">Hide</button>
+    <hr>
+
+
+    <!-- Show -->
+    <p id="para4" style="display: none;">Show Element</p>
+    <button class="btn btn-primary" onclick="document.getElementById('para4').style.display=' block';">Show</button>
+    <hr>
+
+    <!-- show/hide Toggle -->
+    <p id="para5">Hello JavaScript Show/Hide Toggle</p>
+    <button class="btn btn-success" onclick="toggle()">Show or Hide</button>
+
+    <script>
+        function toggle(){
+            let y=document.getElementById('para5');
+            //Conditional Statement
+            if(y.style.display=='none'){
+                y.style.display='block';
+        }else{
+            y.style.display='none';
+        }
+    }
+    </script>
+
+</body>
+
+</html>

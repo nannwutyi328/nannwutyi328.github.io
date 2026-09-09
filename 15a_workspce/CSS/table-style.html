@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2,p{
+            text-align: center;
+            color: blue;
+        }
+         table{
+           /* border-collapse: collapse;*/
+           border: 3px solid black;
+           border-radius: 10px;
+           background-color: rgb(236, 239, 241);
+           width: 50%;
+           margin: auto;
+           box-shadow: 0 5px 10px 3px gray;
+         /* 
+         min-width: 500px;
+         overflow-x: auto;*/
+        }
+        th{
+            border: 1px soild blue;
+            background-color: rgb(1, 253, 253);
+            border-radius: 10px;
+            height: 50px;
+            box-shadow: 0 5px 3px 3px rgb(236, 93, 93);
+        }
+        tr{
+            border: 1px soild blue;
+            background-color: rgb(66, 101, 99);
+            margin: 10px;
+        }
+      th:hover, td:hover{
+            background-color: rgb(124, 223, 167);
+        }
+        td{
+            height: 75px;
+            padding: 20px;
+            text-align: center;
+            vertical-align: top;
+            border-radius: 10px;
+            box-shadow: 0 5px 3px 3px rgb(224, 132, 132);
+        }
+        img.table-image{
+            width: 25%;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <h2>Complete Css Table Style</h2>
+    <p>Course Time Table</p>
+    <table  border="1" cellspacing="3" cellpadding="5">
+    <div>
+        <thead>
+            <tr>
+                <th>Header-1</th>
+                <th>Header-2</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 1</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Cell 1.1</td>
+                <td><img class="table-image" src="image/metro-logo.png"></td>
+            </tr>
+            <tr>
+                <td>Cell 2.1</td>
+                <td>Cell 2.2</td>
+            </tr>
+        </tbody>
+    </div>
+</table>
+    
+</body>
+</html>

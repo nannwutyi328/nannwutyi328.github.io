@@ -1,0 +1,99 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 5/Transitional//EN">
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <!-- -->
+        <title>Hyper Links</title>
+        <meta name="description" content="HTML tutorial for hyper links"/>
+        <meta name="keywords" content="html, web desgin, hyper Links"/>
+        <meta name="author" content="Kyaw Zay">
+        <meta http --equiv="refresh" content="25" url = "http://www.goodle.com"/>
+        <style type="text/css">
+            .pseudo a{
+                font-size: large;
+                text-decoration: none;
+                color: brown;
+            }
+            .pseudo a:Link{
+                color: rgb(30, 150, 210);
+                font-weight: 200px;
+            }
+            .pseudo a:visited{
+                color: green;
+            }
+            .pseudo a:hover{
+                color: red;
+                background-color: yellow;
+            }
+            .pseudo a:active{
+                color: blueviolet;
+                text-decoration: underline;
+            }
+            div.hightlight{
+                background-color: thistle;
+                width: 50%;
+                margin: auto;
+                padding: 10px;
+                text-align: center;
+                color: cadetblue;
+                position: relative;
+            }
+            div.hightlight:hover{
+                background-color: gray;
+                color: black;
+                font-size: 15px;
+            }
+            div.tooltip{
+                width: 100px;
+                background-color: rgb(215, 235, 247);
+                padding: 5px;
+                text-align: center;
+                border-radius: 5px;
+                box-shadow: 0 3px 5px gold;
+                display: none;
+                position: absolute;
+                left: 50%;
+                top: 100%;
+            }
+            div.hightlight:hover + div.tooltip{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hyper Link Pseudo Class </h1>
+        <div class="hightlight">
+        <h2>CSS class and Pseudo class</h2>
+        <p>Css style is supprt the web layouts</p>
+        </div>
+    <div class="tooltip">
+        <p>This is tooltip</p>
+    </div>
+        <!---Same server and same directory hyper text-->
+        <div class="pseudo">
+       1.<a href="text_format_1.html">go to text format</a><br><br>
+
+        <!---Same server and sub directory hyper text-->
+       2.<a href="../WEB DEVELOPING/HTML/Test/home.html">go to home page</a><br><br>
+
+        <!---Same server and sub directory of parent folder hyper text-->
+       3.<a href="../Main Test">go to 11 Batch page</a><br><br>
+
+        <!---Different server hyper link-->
+        4.<a href="https://www.google.com" target="_blank">go to google site</a><br><br>
+
+        <!--Sending email-->
+        5.<a href="mailto:yaminhlaing144@gmail.com?subject=Test Mail&body=Hello">send mail</a><br><br>
+ 
+        <!---Section hyper link-->
+        6.<a href="#end">Go to the end of page</a><br><br>
+
+        <!--Section of another page hyper link--->
+        7.<a href="../HTML/home.html#end">Go to the end of home page</a><br><br>
+    </div>
+
+    <img src="image/Apples.png">
+
+    </body>
+</html>

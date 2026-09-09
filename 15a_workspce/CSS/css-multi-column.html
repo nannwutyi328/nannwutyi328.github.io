@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PResponsive Website Layout</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: white;
+            margin: 10px;
+        }
+        .header{
+            background: linear-gradient(rgb(236, 64, 210) , rgb(240, 189, 237));
+            text-align: center;
+            padding: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: rgb(240, 131, 207);
+        }
+        .topnav a{
+            display: block;
+            float: left;
+            text-decoration: none;
+            color: black;
+            padding: 12px 14px;  
+        }
+        .topnav a:hover{
+            background-color: rgb(183, 192, 141);
+            color: white;
+        }
+        .topnav a.active{
+            background-color: rgb(197, 20, 103);
+            color:rgb(244, 77, 219);
+        }
+        .container{
+            width: 90%;
+            margin: auto;
+        }
+        .row{
+            width: 100%;
+            margin-top: 20px ;
+        }
+        .row::after {
+            clear: both;
+            display: table;
+            content: "";
+        }
+        p.justify{
+            text-align: justify;
+            color: rgb(19, 19, 19);
+            line-height: 1.5;
+            font-size: large;
+        }
+        .newspaper-1{
+            column-count: 3;
+            column-gap: 20px;
+            column-rule: 2px solid palevioletred;
+        }
+        .spanall{
+            column-span: all;
+        }
+        .newspaper-2{
+            column-count: 5;
+            column-gap: 20px;
+            column-rule: 2px solid rgb(231, 2, 2);
+        }
+        .footer{
+            background: linear-gradient(rgb(236, 64, 210) , rgb(240, 189, 237));
+            text-align: center;
+            padding: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+        }
+        @media screen and (max-width: 800px){
+            .newspaper-1{
+                column-count: 1;
+                column-gap: 20px;
+                column-rule: 2px solid rgb(231, 2, 2);
+            }
+            
+        }
+        @media screen and (max-width: 600px){
+            
+            .newspaper-1{
+                column-count: 2;
+                column-gap: 20px;
+                column-rule: 2px solid rgb(231, 2, 2);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Metro IT Computer</h1>
+
+    </header>
+        <div class="topnav">
+            <a href="#" class="active">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+        </div>
+    <content>
+        <div class="container">
+        <!--first row--->
+          <div class="row"> 
+            <div class="newspaper-1">
+                <h2 class="spanall">Metro IT and Japanese Language Center(Myanmar)</h2>
+                <p>
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                </p>
+            </div>
+
+        </div>
+         <!--second row--->
+        <div class="row">
+            <div class="newspaper-2">
+                <h2 class="spanall">Metro IT and Japanese Language Center(Myanmar)</h2>
+                <p>
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                </p>
+            </div>
+        </div>
+    
+    </div>
+    </content>
+    <footer class="footer">
+        <h2>Copyright &copy; 2026 Metro IT Computer,Myanmar</h2>
+
+    </footer>
+</body>
+</html>

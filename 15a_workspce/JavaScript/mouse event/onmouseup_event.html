@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Up Event</title>
+</head>
+<body>
+    <h2>Mouse  Up</h2>
+    <p class="para">Release the mouse button.</p>
+    <button onmouseup="change_text()">Mouse Up</button>
+
+
+    <script>
+        function change_text(){
+            let para=document.querySelector(".para");
+            para.innerHTML="Mouse Button Released";
+            para.style.color="red";
+            para.style.fontSize="30px";
+            para.style.fontWeight="bold";
+            para.style.textDecoration="underline";
+          //  para.style.textDecoration="overline";
+            para.style.backgroundColor="blue";
+
+        }
+    </script>
+</body>
+</html>

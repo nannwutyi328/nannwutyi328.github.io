@@ -1,0 +1,103 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 5/Transitional//EN">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>List Example</title>
+        <meta name="description" content="HTML tutorial for order list, unorder list , definition list"/>
+        <meta name="keywords" content="html, web desgin,order list, unorder list , definition list "/>
+        <meta name="author" content="Kyaw Zay"/>
+        <meta http --equiv="refresh" content="25" url = "http://www.google.com"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+       <style>
+        body{
+            background-color: aqua;
+        }
+        *{
+            font-size: large;
+        }
+        ol,ul{
+             list-style-type: none;
+        }
+        ol.Latin{
+            list-style-type: lower-latin;
+
+        }
+        ol.image{
+            list-style-image: url(./image/Cherries-small-01.png);
+            width: 50%;
+            margin: auto;
+            background-color: crimson;
+        }
+        ul.greek li{
+            list-style: lower-greek;
+           background-color: yellowgreen;
+            padding: 10px;
+            margin: 20PX;
+        }
+        ul.square{
+            list-style-type: square;
+            background-color: chocolate;
+            width: 50%;
+        }
+        ul.square li{
+            list-style-type: square;
+            background-color: rebeccapurple;
+            padding: px;
+            margin: 20px;
+            width: 50%;
+            list-style-position: inside;
+        }
+        ol.icon{
+            margin-left: -15px;
+            background-color: burlywood;
+        }
+        .icon li i, icon li span{
+            color: darkolivegreen;
+        }
+
+
+       </style>
+    </head>
+    <body>
+       <h1><center>List Example</center></h1>
+       
+       
+       <p>The following are the fruits</p>
+
+       <ol class="Latin">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Watermalon</li>
+       </ol>
+
+       <ol class="image">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Watermalon</li>
+       </ol>
+
+       <ol class="icon"> 
+         <li><i class="fa fa-home"></i>Home</li>
+         <li><i class="fa fa-phone"></i>Phone</li>
+         <li><i class="fa fa-car"></i>Car</li>
+         <li><span class="fa fa-bars">Menu</span></li>
+       </ol>
+
+       <ul class="greek">
+         <li>Apple</li>
+         <li>Orange</li>
+         <li>Watermalon</li> 
+       </ul>
+
+       <ul class="square">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Watermalon</li> 
+      </ul>
+
+
+
+
+    </body>
+</html>

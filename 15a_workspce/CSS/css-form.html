@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style type="text/css">
+        body {
+            background-color: rgb(221, 221, 139);
+        }
+
+        .title {
+            text-align: center;
+            color: rgb(176, 14, 14);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .registration-box {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(rgba(238, 132, 132, 0.797), rgb(240, 139, 6), rgba(253, 228, 228, 0.797));
+            box-shadow: 2px 3px 10px 3px rgb(237, 209, 173);
+        }
+        .row {
+            margin: 10px;
+        }
+        .row::after {
+            clear: both;
+            display: table;
+            content: "";
+        }
+
+        .col-25 {
+            width: 30%;
+            float: left;
+            padding-top: 6px;
+            text-align: right;
+
+        }
+
+        .col-25.address {
+            padding-top: 30px;
+
+        }
+
+        .col-75 {
+            width: 70%;
+            float: left;
+            margin-top: 6px;
+        }
+
+        label {
+            color: black;
+            width: 50%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 5px;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=date],
+        input[type=password],
+        select,
+        textarea {
+            width: 75%;
+            border-radius: 8px;
+            padding: 8px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+            transition: width 0.5s ease-in-out;
+        }
+
+        input[type=text]:focus,
+        input[type=email]:focus,
+        input[type=date]:focus,
+        input[type=password]:focus,
+        select:focus,
+        textarea:focus {
+            background-color: rgb(242, 237, 211);
+            outline: none;
+            border: 2px solid rgb(218, 108, 11);
+            width: 100%;
+        } 
+
+        input[type=password] {
+            /*background-image: url('image/search-icon-05.png');*/
+            background-repeat: no-repeat;
+            background-position: 4px 4px;
+            padding-left: 25px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        div.password {
+            position: relative;
+        }
+
+        .icon {
+            position: absolute;
+            left: 10px;
+            top: 8px;
+            font-size: small;
+        }
+        
+        input[type=reset],
+        input[type=submit] {
+            width: 35%;
+            padding: 8px 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: none;
+            margin-right: 20px;
+        }
+
+        input[type=reset] {
+            background-color:  rgb(246, 8, 8);
+        }
+
+        input[type=reset]:hover {
+            background-color: rgb(250, 61, 61);
+        }
+
+        input[type=submit] {
+            background-color: rgb(47, 188, 47);
+        }
+
+        input[type=submit]:hover {
+            background-color: rgb(64, 145, 64);
+        }
+        /*Responsive Layout Styles*/
+        @media screen and (max-width: 900px){
+            .row{
+                margin: 10px;
+            }
+            .con-25, .col-75{
+                width: 100%;
+                text-align: left;
+            }
+            input[type=sumbit],input[type=reset]{
+                width: 50%;
+                margin-bottom: 10px;
+
+            }
+        }
+        @media screen and (max-width: 600px){
+            .row{
+                width: 100%;
+                margin: 5px;
+            }
+            .con-25, .con-75 {
+                width: 100%;
+                text-align: left;
+            }
+           
+            input[type=sumbit], input[type=reset] {
+                width: 50%;
+                margin-bottom: 10px;
+
+            }
+            
+        input[type=text],
+        input[type=email],
+        input[type=date],
+        input[type=password],
+        select,
+        textarea {
+            width: 100%;
+            border-radius: 8px;
+            padding: 8px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+        }
+    }
+       
+    </style>
+</head>
+
+<body>
+    <h2 class="title">Using CSS to style an HTML Form</h2>
+    <div class="registration-box">
+
+        <form action="accept.php" method="get">
+            <div class="row">
+                <div class="col-25">
+                    <label for="f-name">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="f-name" name="f-name" value="Yamin">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="l-name">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="l-name" name="l-name" value="Hlaing">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="dob">Date of Birth</label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="dob" name="dob">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="mail" name="mail">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="course">Course</label>
+                </div>
+                <div class="col-75">
+                    <select id="course" name="course">
+                        <option value="CS">Computer Science</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="BS">Business</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="pwd">Password</label>
+
+                </div>
+                <div class="col-75">
+                    <div class="password">
+                        <i class="fa fa-lock icon"></i>
+                        <input type="password" id="pwd" name="pwd" placeholder="Type your password">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25 address">
+                    <label for="add">Address</label>
+                </div>
+                <div class="col-75">
+                    <textarea rows="5" cols="25"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25"></div>
+                <div class="col-75">
+                    <input type="reset" value="Clear form">
+                    <input type="submit" value="Register">
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

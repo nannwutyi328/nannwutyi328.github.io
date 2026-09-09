@@ -1,0 +1,26 @@
+
+        /* Element Selectors */
+        p{            
+            color: red;
+        }
+        h1{
+            color: rgb(92, 34, 3);            
+            /*font-size: 30px;*/
+        }
+         /* Grouping Selectors */
+        h1,p{
+            text-align: center;
+        }
+        /* ID Selectors */
+        #para-1{
+            color: brown;
+            font-size: larger;
+        }
+        /* Class Selectors */
+        p.right{
+            text-align: right;
+        }
+        .large{
+            font-size: larger;
+        }
+   

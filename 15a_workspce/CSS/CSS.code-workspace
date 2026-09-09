@@ -1,0 +1,17 @@
+
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../HTML"
+		},
+		{
+			"path": "../WEB DEVELOPING"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CSS"
+	}
+}

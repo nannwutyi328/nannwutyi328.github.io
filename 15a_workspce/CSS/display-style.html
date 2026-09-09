@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
+
+    <style>
+        h1,h2,p{
+            display: inline;
+        }
+        li{
+            display: inline;
+        }
+        a.nav-link{
+            text-decoration: none;
+            color: black;
+        }
+        a.nav-link:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+        img, span, i{
+            display: block;
+        }
+        img.display-none{
+            display: none;
+            /*visibility: hidden;*/
+        }
+        div.display-block{
+            border: 1px solid black;
+            padding: 10px;
+            width: 300px;
+            margin: auto;
+            background-color: burlywood;
+        }
+        div.display-block:hover{
+            background-color: rgb(132, 121, 113);
+        }
+        div.display-block:hover img.display-none{
+            display: block;
+
+        }
+        button.submit{
+            background-color: chocolate;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 15px
+        }
+        button.submit:hover{
+            background-color: rgb(81, 37, 5);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Css Diaplay Styles</h1>
+    <h2>Display Block</h2>
+    <p>Display Contents</p>
+
+    <ul>
+        <li><a class="nav-link" href="#">Home</a> | </li>
+        <li><a class="nav-link" href="#">About Us</a> | </li>
+        <li><a class="nav-link" href="#">Contact</a> | </li>
+        <li><a class="nav-link" href="#">Login</a> | </li>
+        <li><a class="nav-link" href="#">Register</a> | </li>
+    </ul>
+    <div class="display-block">
+         <img class="display-none" src="image/metro-logo.png" alt="Metro Logo" width="100px">
+         <span>Metro Web Developing Course</span>
+         <i class="fa fa-home">Home</i>
+    </div>
+    <button class="submit">Sumbit</button>
+</body>
+</html>

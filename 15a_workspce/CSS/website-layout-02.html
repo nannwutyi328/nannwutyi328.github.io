@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PResponsive Website Layout</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: white;
+            margin: 20px;
+        }
+        .header{
+            background: linear-gradient(rgb(236, 64, 210) , rgb(240, 189, 237));
+            text-align: center;
+            padding: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: rgb(240, 131, 207);
+        }
+        .topnav a{
+            display: block;
+            float: left;
+            text-decoration: none;
+            color: black;
+            padding: 12px 14px;  
+        }
+        .topnav a:hover{
+            background-color: rgb(183, 192, 141);
+            color: white;
+        }
+        .topnav a.active{
+            background-color: rgb(197, 20, 103);
+            color:rgb(244, 77, 219);
+        }
+        .row{
+            width: 100%;
+            margin: 5px 0;
+        }
+        .row::after {
+            clear: both;
+            display: table;
+            content: "";
+        }
+        .column-100{
+            float: left;
+            width: 100%;            
+        }
+        .column-50{
+            float: left;
+            width: 50%; 
+        }
+        .column-35{
+            float: left;
+            width: 35%;
+        }
+        .column-30{
+            float: left;
+            width: 30%;
+        }
+        .card{
+            background-color: rgb(245, 221, 245);
+            padding: 20px;
+
+        }
+        .card_bg_light_gray{
+            background-color: rgb(231, 223, 223);
+            padding: 20px;
+        }
+        .left{
+            margin-right: 10px;
+        }
+        .right{
+            margin-left: 10px;
+        }
+        p.justify{
+            text-align: justify;
+            color: rgb(19, 19, 19);
+            line-height: 1.5;
+            font-size: large;
+        }
+        img.size-100{
+            width: 100%;
+        }
+        img.size-75{
+            width: 75%;
+        }
+        img.size-50{
+            width: 50%;
+        }
+        img.size-25{
+            width: 25%;
+        }
+        img.shadow{
+            box-shadow: 3px 5px 8px 5px rgb(242, 113, 201);
+        }
+        img.shadow:hover {
+            box-shadow: 3px 5px 8px 5px rgb(236, 226, 38);
+        }
+        .image-float-left{
+            float: left;
+            margin-right: 20px;
+        }
+        .footer{
+            background: linear-gradient(rgb(236, 64, 210) , rgb(240, 189, 237));
+            text-align: center;
+            padding: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+        }
+        @media screen and (max-width: 800px){
+            .column-50, .column-35, .column-30{
+                width: 100%;
+            }
+            img.size-75{
+                width: 50%;
+        }
+            
+        }
+        @media screen and (max-width: 600px){
+            .column-50, .column-35, .column-30{
+                width: 100%;
+            }
+                img.size-75{
+                width: 100%;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Metro IT Computer</h1>
+
+    </header>
+    <nav>
+        <div class="topnav">
+            <a href="#" class="active">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+    </nav>
+    <section>
+        <!--first row--->
+        <div class="row"> 
+            <div class="column-50">
+                <div class="card left">
+                    <h1>First Row,First Column</h1>
+                    <p class="justify">
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                    </p>
+                </div>
+            </div>
+            <div class="column-50">
+                <div class="card">
+                    <h1>First Row,Second Column</h1>
+                    <p class="justify">
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+         <!--second row--->
+        <div class="row"> 
+            <div class="column-100">
+                <div class="card_bg_light_gray">
+                        <h1>Second Row,First Column</h1>
+                        <img  class="size-75 shadow image-float-left" src="image/lotus-flower-01.jpg">
+                        <p class="justify">
+                            This following Contents are describe the about vertical navigation bar.
+                            This following Contents are describe the about vertical navigation bar.
+                            This following Contents are describe the about vertical navigation bar.
+                            This following Contents are describe the about vertical navigation bar.
+                            This following Contents are describe the about vertical navigation bar.
+                            This following Contents are describe the about vertical navigation bar.
+                            This following Contents are describe the about vertical navigation bar.
+                            This following Contents are describe the about vertical navigation bar.
+                            This following Contents are describe the about vertical navigation bar.
+                            This following Contents are describe the about vertical navigation bar.
+                            This following Contents are describe the about vertical navigation bar.
+                            This following Contents are describe the about vertical navigation bar.
+                            This following Contents are describe the about vertical navigation bar.
+
+                        </p>                          
+                </div>
+            </div>
+
+        </div>
+        <!--third row--->
+        <div class="row"> 
+            <div class="column-35">
+                <div class="card">
+                    <h1>Third Row,First Column</h1>
+                    <img class="size-100 shadow" src="image/flower-09.jpg">
+                    <p class="justify">
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                    </p>
+                </div>
+
+            </div>
+            <div class="column-30">
+                <div class="card right">
+                    <h2>Third Row,Second Column</h2>
+                    <img class="size-100 shadow" src="image/flower-05.jpg">
+                    
+                    <p class="justify">
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                    </p>
+                </div>
+            </div>
+            <div class="column-35">
+                <div class="card right">
+                    <h1>Third Row,Third Column</h1>
+                    <img class="size-100 shadow" src="image/flower-10.jpg">
+                    <p class="justify">
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                        This following Contents are describe the about vertical navigation bar.
+                        
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    
+
+
+    </section>
+    <footer class="footer">
+        <h2>Copyright &copy; 2026 Metro IT Computer,Myanmar</h2>
+
+    </footer>
+</body>
+</html>

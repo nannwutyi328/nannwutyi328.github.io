@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+</head>
+<style>
+    table {
+        width: 100%;
+    }
+
+
+    th,
+    td {
+        border: 1px solid #ddd;
+    }
+
+    tr:nth-child(odd) {
+        background-color: rgb(199, 197, 197);
+
+    }
+
+    tr:nth-child(even) {
+        background-color: rgb(235, 229, 229);
+    }
+
+    tr:nth-child(odd):hover {
+        background-color: rgb(181, 176, 176);
+
+    }
+
+    tr:nth-child(even):hover {
+        background-color: rgb(223, 216, 216);
+    }
+
+    label {
+        color: #f6efef;
+    }
+</style>
+
+<body>
+    <div class="container-fluid m-2" style="font-family:Georgia;">
+
+        <div class="border border-3  bg-warning p-4 container-fluid">
+            <h1 class="text-center">Keyboard Events</h1>
+
+            <div>
+                <table cellpadding="9" cellspacing="0" class=" border border-3">
+                    <tr>
+                        <th>Event</th>
+                        <th>Description</th>
+                    </tr>
+
+                    <tr>
+                        <td>keydown</td>
+                        <td>Fires when the user presses a key on the keyboard</td>
+                    </tr>
+
+                    <tr>
+                        <td>keyUp</td>
+                        <td>Fires when the user releases a key on the keyboard.</td>
+                    </tr>
+
+                    <tr>
+                        <td>keypress</td>
+                        <td>Fires when the user presses and bolds a key on the keyboard.</td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+
+
+
+        <div class="bg-info container-fluid mt-2 p-4">
+
+            <div>
+                <h1 class="text-danger">Keyup Event</h1>
+                <p>The keyup event is triggered when a key is <b>released </b> after being pressed.It allows you to
+                    capture the key
+                    that was <b>released</b> and perform actions based on that key.
+                </p>
+                <label for="try it out">Try it out:</label>
+                <input type="text" placeholder="Type something and release the key..." class="form-control mt-2"
+                    onkeyup="displayUp(event)">
+
+            </div>
+            <hr>
+
+            <div>
+                <h1 class="text-primary">Keydown Event</h1>
+                <p>The keydown event is triggered when a key is <b>pressed down. </b> It allows you to
+                    capture the key
+                    that was <b>pressed</b> and perform actions based on that key.
+                </p>
+                <label for="try it out">Try it out:</label>
+                <input type="text" placeholder="Type something and press the key..." class="form-control mt-2"
+                    onkeydown="displayDown(event)">
+
+
+
+            </div>
+
+            <hr>
+
+
+
+            <div>
+                <h1 class="text-dark">Keypress Event</h1>
+                <p>The keypress event is triggered when a key is <b>pressed and down. </b> It allows you to
+                    capture the key
+                    that was <b>pressed</b> and perform actions based on that key.
+                </p>
+
+
+                <label for="try it out">Try it out:</label>
+                <input type="text" placeholder="Type something and hold the key..." class="form-control mt-2"
+                    onkeypress="display(event)">
+
+
+                <script>
+                    function displayUp(e) {
+
+                        window.alert("Key released: " + e.key);
+                    }
+
+                    function displayDown(e) {
+
+                        window.alert("Key pressed: " + e.key);
+                    }
+                    function display(e) {
+
+                        window.alert("Key pressed and held: " + e.key);
+
+
+                    }
+
+                </script>
+
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

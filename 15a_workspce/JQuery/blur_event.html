@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-4.0.0.min.js"></script>
+
+</head>
+<body>
+    Name:
+    <input type="text" name="" id="username" placeholder="Enter username">
+    <!-- JQuery
+     
+      blur() - it occurs when an input element loses focus (when the user clicks or tabls away from  the input field) -->
+
+    <script>
+
+        $(document).ready(function(){
+            $("#username").blur(function(){
+                $(this).css("background-color","red");
+            });
+        });
+
+        
+    </script>
+</body>
+</html>

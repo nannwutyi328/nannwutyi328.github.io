@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        img.box{
+         /*   border-radius: 10px 20px ;*/
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
+        }
+        img.circle{
+            border-radius: 50%;
+        }
+        img.thumbnial{
+            display: block;
+            border: 2px solid palevioletred;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: pink;
+            max-width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img:hover{
+            box-shadow: 3px 5px 10px 5px palevioletred, 5px 3px 8px 5px rgb(44, 2, 16);
+        }
+        div.image-box{
+            background: linear-gradient(rgb(239, 70, 216) ,rgb(255, 204, 213));
+            width: 25%;
+            padding: 10px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Image Styles</h2>
+    <img  class=circle src="image/metro-logo.png" alt="metro">
+    <img class=box src="image/Strawberries.png" alt="Strawberries">
+    <img src="image/Apples.png" alt="apple">
+    <img class=thumbnial src="image/orchid-flower-01.jpg" alt="flower">
+    <div class="image-box">
+        <p>Linear gradient</p>
+        <p>Welcome to Metro It and Japanese Language Center.
+           This following Contents are describe the about vertical navigation bar.
+           This following Contents are describe the about vertical navigation bar.
+           This following Contents are describe the about vertical navigation bar.
+        </p>
+    </div>
+</body>
+</html>

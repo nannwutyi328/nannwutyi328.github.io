@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseout Change Style</title>
+
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h2>Mouse Out Event: onmouseout</h2>
+    <p>Move your mouse<b><i>away</i></b>from image.</p>
+    <img src="../mouse event/images/image.png" onmouseout="change_style()"  alt="image">
+
+    <script>
+        // if use queryselectorall ,write <img> cause not know that tage name .
+        function change_style(){
+            let img=document.querySelector("img");
+            img.style.width="300px";
+            img.style.border="5px solid red";
+            img.style.borderRadius="40px";
+            img.style.opacity="0.7";
+
+
+        }
+    </script>
+
+</body>
+</html>

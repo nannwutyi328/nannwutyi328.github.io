@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key up Event</title>
+</head>
+
+<body>
+
+    <h2>Keyboard Event: onkeyup</h2>
+    <p>Executeswhen a key is released.</p>
+    <!-- <input type="text" onkeyup="show_message()"> -->
+    <button onclick="show_message()">Show table</button>
+    <div id="info"></div>
+
+    <script>
+
+
+        // function show_message() {
+
+        //     document.getElementById("info").innerHTML = `
+        //         <table border="1">
+        //             <tr>
+        //                 <th>Name</th>
+        //                 <th>Age</th>
+        //                 <th>city</th>
+
+        //             </tr>
+        //             <tr>
+        //                 <td>Nann Wutyi Htun</td>
+        //                 <td>23</td>
+        //                 <td>Monywa</td>
+
+        //             </tr>
+        //         </table>`
+        //         ;
+            
+        //     }
+
+            function show_message(){
+
+                document.getElementById("info").innerHTML=
+                "<table border=\"1\">"+ //border=1
+                "<tr><th>Name</th><th>Age</th><th>City</th></tr>"+
+                "<tr><td>Nann Wutyi Htun</td><td>23</td><td>Monywa</td></tr>"+
+                "</table>";
+
+            }
+
+
+        
+
+
+
+
+
+        // function show_message(){
+        //     document.getElementById("para").innerHTML="<h2>A key is released.</h2>";
+        //                 document.getElementById("para").innerHTML="<h2>A key is released.</h2>";
+
+        // }
+
+
+    </script>
+</body>
+
+</html>

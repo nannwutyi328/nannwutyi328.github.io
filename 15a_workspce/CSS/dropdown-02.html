@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+
+<style>
+    .dropbtn{
+        border-style: none;
+        background-color: rgb(28, 60, 121);
+        color: rgb(244, 244, 248);
+        padding: 10px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .dropbtn:hover{
+        background-color: rgb(98, 147, 239);
+    }
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background-color: rgb(199, 192, 246);
+        box-shadow: 0 3px 5px 5px rgb(74, 71, 117);
+        min-width: 150px;
+        left: 10px;
+        top: 35px;
+    }
+    .dropdown-content a{
+        display: block;
+        padding: 10px 14px;
+        text-decoration: none;
+        color: rgb(255, 3, 3); 
+    }
+    .dropdown-content a:hover{
+        background-color: rgb(23, 4, 95);
+
+    }
+
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+
+</style>
+<body>
+    <h1>Dropdown Menu Example</h1>
+    <div class="dropdown">
+        <button class="dropbtn">Batch<i class="fa fa-angle-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">Batch 1</a>
+            <a href="#">Batch 2</a>
+            <a href="#">Batch 3</a>
+        </div>
+    </div>
+    <h1>Metro IT and Japanese Language Center</h1>
+    
+    
+</body>
+</html>

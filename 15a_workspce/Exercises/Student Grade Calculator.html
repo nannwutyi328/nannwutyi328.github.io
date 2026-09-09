@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"></head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+    body{
+        background: linear-gradient(rgba(220, 209, 209, 0.797), rgb(53, 240, 6), rgba(253, 228, 228, 0.797));
+     }
+     
+</style>
+                
+
+   
+
+
+
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow p-4 " style="font-family: Georgia, 'Times New Roman', Times, serif;color: blue;box-shadow: 0 7 4 rgb(173, 163, 163);border: solid blue ; background: linear-gradient(rgba(238, 132, 132, 0.797), rgb(6, 185, 240), rgba(253, 228, 228, 0.797));">
+                    <h3 class="text-center mb-4 text-success">Student Grade Calculator</h3>
+                    
+                    <form id="gradeForm">
+                        <div class="mb-3">
+                            <label class="form-label">English Marks (0-100)</label>
+                            <input type="number" id="english" class="form-control" min="0" max="100" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Mathematics Marks (0-100)</label>
+                            <input type="number" id="math" class="form-control" min="0" max="100" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Science Marks (0-100)</label>
+                            <input type="number" id="science" class="form-control" min="0" max="100" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Computer Marks (0-100)</label>
+                            <input type="number" id="computer" class="form-control" min="0" max="100" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Calculate Grade</button>
+                    </form>
+
+
+                    <div id="gradeResult" class="mt-4 p-3 border rounded bg-white" style="display: none;">
+                        <h4 class="text-primary">Calculation Result</h4>
+                        <p><strong>Total Marks:</strong> <span id="totalMarks"></span> / 400</p>
+                        <p><strong>Average Marks:</strong> <span id="avgMarks"></span>%</p>
+                        <p><strong>Grade:</strong> <span id="gradeLetter" class="fw-bold"></span></p>
+                        <p><img src="https://tse3.mm.bing.net/th/id/OIP.qhHy8hUUPLV64YWF1M-2VAHaHa?r=0&w=816&h=816&rs=1&pid=ImgDetMain&o=7&rm=3" style="width: 300px;height: 200px;"></p>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        $('#gradeForm').on('submit', function(e) {
+            e.preventDefault();
+            // to change string to number "80" 80 "67.4" 67.4
+            let eng = parseFloat($('#english').val()) || 0;
+            let math = parseFloat($('#math').val()) || 0;
+            let sci = parseFloat($('#science').val()) || 0;
+            let comp = parseFloat($('#computer').val()) || 0;
+
+            let total = eng + math + sci + comp;
+            let average = total / 4;
+
+            let grade = '';
+            if (average >= 80) {
+                grade = 'A (Distinction)';
+            } else if (average >= 60) {
+                grade = 'B (Credit)';
+            } else if (average >= 40) {
+                grade = 'C (Pass)';
+            } else {
+                grade = 'F (Fail)';
+            }
+
+            $('#totalMarks').text(total);
+            $('#avgMarks').text(average.toFixed(2));
+            $('#gradeLetter').text(grade);
+            // fadein is dan dan haiu between 600 milisec 
+            $('#gradeResult').slideDown(600).fadeIn(600);
+        });
+    </script>
+</body>
+</html>

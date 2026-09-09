@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Pressed Event</title>
+</head>
+
+<body>
+
+
+
+    <button onclick="show_form()">Show Form</button>
+
+    <!-- for input show element and display form -->
+    <div id="info"></div>
+
+
+    <script>
+        function show_form() {
+            document.getElementById("info").innerHTML = `
+            <h2>Keyboard Event: onkeypress</h2>
+
+    <p>The keypress event is triggered when a key is <b><i>pressed and held down.</i></b>
+        It allows you to capture the key that was pressed and perform actions based on that key.
+    </p> 
+
+    <h3>Example</h3>
+
+    <form>
+        <label >Enter Your Name:</label>
+        <!-- display function with one paramenter -->
+        <input type="text" onkeypress="display(this.value)">
+    </form>
+
+    <p id="result"></p>
+    `;
+        }
+
+        function display(text){
+            document.getElementById("result").innerHTML="You typed : <b><i>"+text+"</i></b>";
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

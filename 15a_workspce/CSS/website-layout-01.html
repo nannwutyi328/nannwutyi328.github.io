@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <style type="text/css">
+        body{
+            background-color: white;
+            margin: 20px;
+        }
+        .header{
+            background: linear-gradient(rgb(182, 213, 27) , rgb(102, 187, 5));
+            text-align: center;
+            padding: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: rgb(179, 217, 65);
+        }
+        .topnav a{
+            display: block;
+            float: left;
+            text-decoration: none;
+            color: black;
+            padding: 12px 14px;  
+        }
+        .topnav a:hover{
+            background-color: rgb(183, 192, 141);
+            color: white;
+        }
+        .topnav a.active{
+            background-color: rgb(208, 240, 156);
+            color:rgb(17, 191, 8);
+        }
+        .row{
+            width: 100%;
+            margin: 5px 0;
+        }
+        .row::after {
+            clear: both;
+            display: table;
+            content: "";
+        }
+        .column-100{
+            float: left;
+            width: 100%;
+            background-color: rgb(225, 253, 143);
+            
+
+        }
+        .column-50{
+            float: left;
+            width: 50%;
+            background-color: rgb(225, 253, 143);
+
+        }
+        .column-35{
+            float: left;
+            width: 35%;
+            background-color:rgb(225, 253, 143);
+
+        }
+        .column-30{
+            float: left;
+            width: 30%;
+            background-color: rgb(225, 253, 143);
+
+        }
+        .footer{
+            background: linear-gradient(rgb(182, 213, 27) , rgb(102, 187, 5));
+            text-align: center;
+            padding: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+        }
+        @media screen and (max-width: 800px){
+            .column-50, .column-35, .column-30{
+                width: 100%;
+            }
+            
+        }
+        @media screen and (max-width: 600px){
+            .column-50, .column-35, .column-30{
+                width: 100%;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Metro IT Computer</h1>
+
+    </header>
+    <nav>
+        <div class="topnav">
+            <a href="#" class="active">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+    </nav>
+    <section>
+        <!--first row--->
+        <div class="row"> 
+            <div class="column-50">
+                <h1>First Row,First Column</h1>
+                <p>
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                </p>
+            </div>
+            <div class="column-50">
+                <h1>First Row,Second Column</h1>
+                <p>
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                </p>
+
+            </div>
+
+        </div>
+         <!--second row--->
+        <div class="row"> 
+            <div class="column-100">
+                <h1>Second Row,First Column</h1>
+                <p>
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                </p>
+
+            </div>
+
+        </div>
+        <!--third row--->
+        <div class="row"> 
+            <div class="column-35">
+                <h1>Third Row,First Column</h1>
+                <p>
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                </p>
+
+            </div>
+            <div class="column-30">
+                <h2>Third Row,Second Column</h2>
+                <p>
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                </p>
+
+            </div>
+            <div class="column-35">
+                <h1>Third Row,Third Column</h1>
+                <p>
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    This following Contents are describe the about vertical navigation bar.
+                    
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <footer class="footer">
+        <h2>Copyright &copy; 2026 Metro IT Computer,Myanmar</h2>
+
+    </footer>
+</body>
+</html>

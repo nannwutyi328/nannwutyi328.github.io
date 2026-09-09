@@ -1,0 +1,23 @@
+/* Name selectors */
+        body{
+            background-color: rgb(208, 250, 236);
+        }
+        h1{
+            color: rgb(102, 102, 228);
+            font-size: 30px;        
+        }
+        p{
+            color: brown;        
+        }       
+        #para-1{
+            color: green;
+        }
+        h1,h2,h3,p{
+            text-align: center;
+        }
+        h2,h3,p.right{
+            text-align: right;
+        }
+        .large{
+            font-size: larger;
+        }

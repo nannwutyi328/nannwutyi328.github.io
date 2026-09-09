@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContextMenu Event</title>
+</head>
+<body>
+    <h2>ContextMenu (right Click) Event</h2>
+    <p>It occurs <b>.</b></p>
+    <div style="width: 300px; height: 150px; background: lightblue;" onmousemove="change_style()">Move your mouse here</div>
+
+    <p>Apple</p>
+    <p>Banana</p>
+    <p>Orange</p>
+    <p>Mango</p>
+
+
+    <script>
+       // function change_style(){
+           // let p=document.querySelectorAll("p");
+            // for(let i=1; i<=p.length; i++){
+            //     p[i].style.color="blue";
+            //     p[i].style.backgroundColor="lightpink";
+            //     p[i].style.fontSize="20px";
+
+            // }
+            function change_style(){
+                document.querySelectorAll("p")[0].style.color="red";
+                document.querySelectorAll("p")[1].style.color="red";
+
+            }
+        
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

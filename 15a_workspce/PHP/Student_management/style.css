@@ -1,0 +1,43 @@
+body {
+    background-color: #f4f6f9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.login-page {
+    padding-top: 80px;
+}
+
+.login-card {
+    border: none;
+    border-radius: 15px;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0 !important;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.superglobal {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+    height: 100%;
+}
+
+.superglobal code {
+    font-size: 20px;
+}

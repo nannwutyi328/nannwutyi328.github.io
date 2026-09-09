@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Down Event</title>
+</head>
+<body>
+    <h2>Mouse  Down</h2>
+    <p class="para">Press the mouse button.</p>
+    <button onmousedown="change_text()">Mouse Down</button>
+
+
+    <script>
+        function change_text(){
+            let para=document.querySelector(".para");
+            para.innerHTML="Mouse Button Pressed";
+            para.style.color="red";
+            para.style.fontSize="30px";
+            para.style.fontWeight="bold";
+          //  para.style.textDecoration="underline";
+            para.style.textDecoration="overline";
+
+        }
+    </script>
+</body>
+</html>
